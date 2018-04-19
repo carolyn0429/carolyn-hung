@@ -29,7 +29,7 @@ public class TransactionController {
         System.out.println(payload);
         Transaction newTransaction;
         String type = (String) payload.get("type");
-        double amount = (double) payload.get("amount");
+        double amount = Double.valueOf(String.valueOf(payload.get("amount")));
         String parentId = String.valueOf(payload.get("parent_id"));
         if (payload.get("parent_id") == null){
             newTransaction =
