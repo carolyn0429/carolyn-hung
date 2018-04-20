@@ -78,7 +78,7 @@ public class TransactionControllerTests {
                 .andDo(print()).andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andReturn();
-        Assert.assertEquals("[1,2]", result.toString());
+        Assert.assertEquals("[1,2]", result.getResponse().getContentAsString());
 
     }
 
