@@ -12,7 +12,7 @@ Folder structure:
         -TransactionController: transactional APIs controller
         -TransactionService: transactional APIs business logic
 
-    -test
+   -test
         -java
             -n26
                 -TransactionControllerTest: unit test for controller
